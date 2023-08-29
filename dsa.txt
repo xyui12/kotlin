@@ -1,0 +1,99 @@
+liner probing
+--------------
+h(k)=k mod 10
+h(k,i)=(h(k)+i)mod10
+we easyly find space
+if last index alwardy filled then we start from
+0 to -++>
+-------------------------
+Quardtic probing
+for finding the location of element
+h(k)=k mode 10
+h(k,i)=(h(k)+i^2)mod 10;
+dis adv.
+
+@-we can't find location the repeation
+ will coming same place there alwardy
+ element there.
+** search complexity o(n).
+-------------------------------
+Heap tree follw almost complete binary tree
+{root must be greater than child or same proceess in level 1,2,3--n}
+(ACBT)
+(1).Max heap(Root max)(chlid doesnt effect)
+(2).Min heap(root min)(child doesnt effect not grater or less as comapare root)
+------------------------------------------------
+**Heap tree construction(insertion)**
+two types
+example 2,45,22,11,6,42,3 perform heap insertion given question
+ans= make heap as over choic(max & min heap)
+(i). insert key one by one the given order time taken o(1) 
+for time of adding one element in heap=o(logn)
+for time of adding n element in heap=o(nlogn)
+------------------------------------
+   **Heap delection**
+stat delect node from bottom
+time complexity o(1) best case
+ ---------------o(logn) worst case
+for time of adding n element o(nlogn)
+---------------------------------------
+ ** Heap sort**
+first make min heap after apply delection operation
+starting deleting node from bootom right side.
+time complexity all cases=o(nlogn);
+->inplace or unstable
+----------------------------------------
+(**Binary search tree**)
+ can have 0,1,2 child
+left child must smaller then root node(parent)
+and right child must be greater than parent node (always)
+-for verfity left side is smallest element there and
+right side greatest element there.
+--it is also follow inorder traversal(shot from if we reach second time on the element)
+-- it also sorted array from
+time com=o(logn)
+---------------------------------------------------------------------
+  ** warshall algorthim**
+d^0  see digram and make matrix
+if d^1 then see d^0 matrix and if you find like(2,1)then
+you should convert into (2,1 or 1,2) or (3,4)=(3,1 or 1,4)
+-------------------------------------------------------------
+  Bst(traversal)
+(1)preorder(1st time visit on graph)
+(2)inorder (2nd time visit on graph)
+(3)postorder(3rd time visit on graph)
+-----------------------------------------
+@ binary tree: at most 2 children (min 0,1,2)
+# full binary tree: either 0 or 2 child
+$ complete b t=internal node is full(except lead node){or
+there is no space any node(root).
+@------------------------------------------------
+
+int pop;
+{
+if(top==-1)
+{
+  cout(underflow);
+   return 0;
+}
+else
+{
+  return stak[top--];
+}
+}
+
+push opertion(insertion operation o the stack)
+void push(int val; int n)
+{
+if(top==n)
+{
+print(overflow);
+}
+top=top+1;
+stack[top]=val;
+}
+}
+
+
+
+//wap read contain to a file convert the lower case to upper letter upper letter will be same
